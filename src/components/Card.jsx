@@ -1,6 +1,6 @@
 export default function Card(props) {
     return (
-        <div className="w-[350px] m-auto card">
+        <div className="w-[300px] grow m-auto card">
             <div className="flex relative items-end rounded-xl overflow-hidden">
                 <img
                     className="w-full"

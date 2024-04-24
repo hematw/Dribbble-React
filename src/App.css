@@ -5,7 +5,7 @@
 }
 
 .slide-track {
-    animation: scroll 50s linear infinite;
+    /* animation: scroll 50s linear infinite; */
     display: flex;
     width: calc(300px * 14);
 }
@@ -21,6 +21,8 @@
     white-space: nowrap;
     background-size: cover;
     background-position: center;
+    animation: scroll 30s linear infinite;
+
 }
 
 .marquee-item-overlay {
@@ -44,10 +46,10 @@
 
 @keyframes scroll {
     0% {
-        transform: translateX(0%);
+        transform: translateX(20%);
     }
 
     100% {
-        transform: translateX(calc(-100%));
+        transform: translateX(calc(-200px * 11));
     }
 }

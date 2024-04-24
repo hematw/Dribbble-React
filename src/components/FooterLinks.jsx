@@ -3,16 +3,16 @@ import dribbbleLogo from "/dribbble.svg"
 
 export default function FooterLinks() {
     return (
-        <footer>
-            <div className="flex justify-between px-10 py-6 text-sm">
+        <footer className="text-center">
+            <div className="flex flex-col items-center sm:flex-rowjustify-between px-6 sm:px-10 py-6 text-sm">
                 <img
-                    className="w-24"
+                    className="w-24 "
                     src={dribbbleLogo}
                     alt="Dribbble Logo."
                 />
 
                 <div className="flex items-center">
-                    <ul className="flex gap-8 ml-8">
+                    <ul className="flex gap-6 my-4 sm:ml-8 flex-wrap justify-center">
                         <li className="font-semibold">
                             <a href="#">Find designers</a>
                         </li>
@@ -47,8 +47,8 @@ export default function FooterLinks() {
                     </ul>
                 </div>
 
-                <div className="flex items-center gap-6">
-                    <ul className="flex gap-4 ml-8">
+                <div className="flex items-center justify-center gap-6">
+                    <ul className="flex gap-4 sm:ml-8">
                         <li className="font-semibold text-lg">
                             <a href="#"><i className="bi bi-twitter"></i></a>
                         </li>
@@ -67,7 +67,8 @@ export default function FooterLinks() {
                     </ul>
                 </div>
             </div>
-            <div className="flex justify-between px-10 py-6 bg-orange-50 text-sm">
+            
+            <div className="flex justify-between flex-col items-center px-6 sm:px-10 py-6 bg-orange-50 text-sm">
                 <div className="flex items-center">
                     <p className="text-gray-500">&copy; {new Date().getFullYear()} Dribbble</p>
                     <ul className="flex gap-8 ml-8">
@@ -86,7 +87,7 @@ export default function FooterLinks() {
                 </div>
 
                 <div className="flex items-center gap-6">
-                    <ul className="flex gap-4 ml-8">
+                    <ul className="flex gap-4 my-4 sm:ml-8 flex-wrap justify-center">
                         <li className="text-gray-500">
                             <a href="#">Jobs</a>
                         </li>

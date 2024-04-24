@@ -2,9 +2,9 @@
 
 export default function FooterCTA() {
     return (
-        <div className="flex flex-col items-center px-10 py-40 text-center bg-yellow-200">
-            <div className="flex flex-col items-center w-[600px] font-medium">
-                <h1 className="font-source-serif text-6xl tracking-wider font-medium leading-tight">
+        <div className="flex flex-col items-center px-6 sm:px-10 py-40 text-center bg-yellow-200">
+            <div className="flex flex-col items-center sm:w-[600px] font-medium">
+                <h1 className="font-source-serif text-4xl sm:text-6xl tracking-wider font-medium leading-tight">
                     Find your next designer today
                 </h1>
 
