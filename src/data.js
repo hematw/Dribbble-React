@@ -46,37 +46,136 @@ const marqueeData = [
 const footerMarqueeData = [
     {
         title: "Web Design",
-        imageUrl: ""
+        imageUrl: "/images/footer-image(1).jpg"
     },
     {
         title: "Print",
-        imageUrl: ""
+        imageUrl: "/images/footer-image(2).jpg"
     },
     {
         title: "Mobile",
-        imageUrl: ""
+        imageUrl: "/images/footer-image(3).jpg"
     },
     {
         title: "Typography",
-        imageUrl: ""
+        imageUrl: "/images/footer-image(4).jpg"
     },
     {
         title: "Illustration",
-        imageUrl: ""
+        imageUrl: "/images/footer-image(5).jpg"
     },
     {
         title: "Animation",
-        imageUrl: ""
+        imageUrl: "/images/footer-image(6).jpg"
     },
     {
         title: "Product Design",
-        imageUrl: ""
+        imageUrl: "/images/footer-image(1).jpg"
     },
     {
         title: "Branding",
-        imageUrl: ""
+        imageUrl: "/images/footer-image(6).jpg"
     }
 ]
 
+const feedData = [
+    {
+        user: "Hemat Waziri",
+        avatar: "images/feed-profile(1).jpg",
+        title: "Always Thankful",
+        likes: "367",
+        views: "3.1",
+        thumbnail: "images/feed-image(6).jpg"
+    },
+    {
+        user: "Masoud Mahmoudi",
+        avatar: "images/feed-profile(2).jpg",
+        title: "Always Thankful",
+        likes: "61",
+        views: "0.4",
+        thumbnail: "images/feed-image(2).jpg"
+    },
+    {
+        user: "Karim Bakhsh",
+        avatar: "images/feed-profile(6).jpg",
+        title: "Always Thankful",
+        likes: "510",
+        views: "10",
+        thumbnail: "images/feed-image(4).jpg"
+    },
+    {
+        user: "Jawad",
+        avatar: "images/feed-profile(4).jpg",
+        title: "Always Thankful",
+        likes: "193",
+        views: "12",
+        thumbnail: "images/feed-image(4).png"
+    },
+    {
+        user: "Samiullah",
+        avatar: "images/feed-profile(5).jpg",
+        title: "Always Thankful",
+        likes: "298",
+        views: "4.3",
+        thumbnail: "images/feed-image(7).jpg"
+    },
+    {
+        user: "Tahira",
+        avatar: "images/feed-profile(3).jpg",
+        title: "Always Thankful",
+        likes: "945",
+        views: "20",
+        thumbnail: "images/feed-image(17).jpg"
+    },
+    {
+        user: "Hemat Waziri",
+        avatar: "images/feed-profile(1).jpg",
+        title: "Always Thankful",
+        likes: "367",
+        views: "3.1",
+        thumbnail: "images/feed-image(6).jpg"
+    },
+    {
+        user: "Masoud Mahmoudi",
+        avatar: "images/feed-profile(2).jpg",
+        title: "Always Thankful",
+        likes: "61",
+        views: "0.4",
+        thumbnail: "images/feed-image(2).jpg"
+    },
+    {
+        user: "Karim Bakhsh",
+        avatar: "images/feed-profile(6).jpg",
+        title: "Always Thankful",
+        likes: "510",
+        views: "10",
+        thumbnail: "images/feed-image(4).jpg"
+    },
+    {
+        user: "Jawad",
+        avatar: "images/feed-profile(4).jpg",
+        title: "Always Thankful",
+        likes: "193",
+        views: "12",
+        thumbnail: "images/feed-image(4).png"
+    },
+    {
+        user: "Samiullah",
+        avatar: "images/feed-profile(5).jpg",
+        title: "Always Thankful",
+        likes: "298",
+        views: "4.3",
+        thumbnail: "images/feed-image(7).jpg"
+    },
+    {
+        user: "Tahira",
+        avatar: "images/feed-profile(3).jpg",
+        title: "Always Thankful",
+        likes: "945",
+        views: "20",
+        thumbnail: "images/feed-image(17).jpg"
+    },
+]
 
-export { marqueeData, footerMarqueeData }
+
+export { marqueeData, footerMarqueeData, feedData }

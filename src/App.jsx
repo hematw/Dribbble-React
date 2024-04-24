@@ -4,7 +4,7 @@ import Marquee from "./components/Marquee"
 import Footer from "./components/Footer"
 import FooterCTA from "./components/FooterCTA.jsx"
 import HeroFeed from "./components/HeroFeed.jsx"
-import { marqueeData } from "./data.js"
+import { marqueeData, footerMarqueeData } from "./data.js"
 import './App.css'
 
 
@@ -15,10 +15,8 @@ function App() {
       <Nav />
       <main>
         <Hero />
-        <Marquee data={marqueeData} />
+        <Marquee marqueeData={marqueeData} />
         <HeroFeed />
-        <Marquee data={marqueeData} />
-        <FooterCTA />
       </main>
       <Footer />
     </>

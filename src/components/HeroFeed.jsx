@@ -1,18 +1,17 @@
+import { feedData } from "../data";
+import Card from "./Card";
 
-export default function HeroFeed(props) {
+
+export default function HeroFeed() {
     return (
-        <div className="">
-            <h1>Explore inspiring designs</h1>
-            <div className="flex items-center font-medium gap-8 overflow-hidden py-10 text-sm text-white">
-                <div className="">
-                    <div className="flex items-end">
-                        <div>
-                        </div>
-                        <div className="">
-
-                        </div>
-                    </div>
-                </div>
+        <div className="p-16">
+            <h1 className="text-4xl text-center">Explore inspiring designs</h1>
+            <div className="flex flex-wrap  font-medium gap-8 overflow-hidden py-10 text-sm">
+                {
+                    feedData.map(item => (
+                        <Card item={item} key={item.title} />
+                    ))
+                }
             </div>
         </div>
     )

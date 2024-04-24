@@ -6,11 +6,28 @@ export default function Nav() {
             <div className="flex items-center">
                 <img className="w-24" src={dribbbleLogo} alt="Dribbble Logo." />
                 <ul className="flex gap-8 ml-8">
-                    <li className="font-semibold"><a href="#">Find designers</a></li>
-                    <li className="font-semibold"><a href="#">Inspiration</a></li>
-                    <li className="font-semibold"><a href="#">Courses</a></li>
-                    <li className="font-semibold"><a href="#">Jobs</a></li>
-                    <li className="font-semibold"><a href="#">Go Pro</a></li>
+                    <li className="font-semibold">
+                        <a href="#">
+                            Find designers
+                            <i className="bi bi-caret-down-fill"></i>
+                        </a>
+                    </li>
+
+                    <li className="font-semibold">
+                        <a href="#">Inspiration</a>
+                    </li>
+
+                    <li className="font-semibold">
+                        <a href="#">Courses<i className="bi bi-caret-down-fill"></i></a>
+                    </li>
+
+                    <li className="font-semibold">
+                        <a href="#">Jobs</a>
+                    </li>
+
+                    <li className="font-semibold">
+                        <a href="#">Go Pro</a>
+                    </li>
                 </ul>
             </div>
 
@@ -19,10 +36,21 @@ export default function Nav() {
                     <span className="flex items-center w-4 ">
                         <i className="bi bi-search"></i>
                     </span>
-                    <input type="text" className="bg-transparent focus:outline-none indent-4" placeholder="Search..." />
+
+                    <input
+                        type="text"
+                        className="bg-transparent focus:outline-none indent-4"
+                        placeholder="Search..."
+                    />
                 </div>
-                <button className="font-semibold">Login</button>
-                <button className="px-6 py-3 font-semibold rounded-full bg-black text-white">Sign up</button>
+
+                <button className="font-semibold">
+                    Login
+                </button>
+
+                <button className="px-6 py-3 font-semibold rounded-full bg-black text-white">
+                    Sign up
+                </button>
             </div>
         </nav>
     )
