@@ -1,0 +1,36 @@
+.slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-track {
+    animation: scroll 50s linear infinite;
+    display: flex;
+    width: calc(300px * 14);
+}
+
+.slide-big {
+    min-width: 270px;
+    min-height: 320px;
+}
+
+.marquee-item {
+    background-color: gray;
+    border-radius: 26px;
+    overflow: hidden;
+    white-space: nowrap;
+    background-size: cover;
+    background-position: center;
+}
+
+.marquee-item-overlay {
+    padding: 20px;
+    height: 320px;
+    background: linear-gradient(0deg, #0000006c, transparent);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(calc(-100%)); }
+}
