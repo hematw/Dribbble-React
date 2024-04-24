@@ -7,19 +7,26 @@ export default function Nav() {
     function handleClick() {
         setIsOpen(!isOpen)
     }
-    
-    console.log("Hey FUCKING WORLD!")
+
+    const navClass = isOpen ? "left-[-32px] w-screen" : "left-[-120%]"
+
     return (
-        <nav className="flex justify-between px-6 sm:px-10 py-6 text-sm">
+        <nav className="flex justify-between px-6 sm:px-10 py-6 text-sm relative">
             <div className="flex items-center">
                 <button
                     className="text-2xl mr-4 sm:hidden"
                     onClick={handleClick}
-                    >
-                    <i class="bi bi-list"></i>
+                >
+                    {
+                        isOpen ?
+                            <i class="bi bi-x"></i> :
+                            <i class="bi bi-list"></i>
+                    }
                 </button>
                 <img className="w-24" src={dribbbleLogo} alt="Dribbble Logo." />
-                <ul className="sm:flex gap-8 ml-8 hidden">
+                <ul
+                    className={`${navClass} flex transition-all duration-1000 flex-col sm:flex-row gap-8 ml-8 p-6 bg-white sm:bg-transparent absolute sm:static  top-24`}
+                >
                     <li className="font-semibold">
                         <a href="#">
                             Find designers
@@ -46,14 +53,14 @@ export default function Nav() {
             </div>
 
             <div className="flex items-center gap-6">
-                <div className="flex w-12 sm:w-56 items-center justify-center sm:bg-white px-6 py-4 rounded-full">
+                <div className="flex w-12 sm:w-56 items-center justify-center sm:bg-white px-8 py-4 rounded-full">
                     <span className="flex items-center w-4 text-gray-500 text-xl sm:text-md">
                         <i className="bi bi-search"></i>
                     </span>
 
                     <input
                         type="text"
-                        className="bg-transparent w-0 focus:outline-none indent-4"
+                        className="bg-transparent w-0 sm:w-48 focus:outline-none indent-4"
                         placeholder="Search..."
                     />
                 </div>

@@ -13,11 +13,11 @@ export default function FooterCTA() {
                 </p>
 
                 <div className="mt-8">
-                    <button className="text-sm px-6 py-4 font-semibold rounded-full bg-black text-white">
+                    <button className="text-sm px-4 py-4 font-semibold rounded-full bg-black text-white">
                         Get started now
                     </button>
 
-                    <button className="text-sm px-6 py-4 font-semibold rounded-full bg-white ml-4">
+                    <button className="text-sm px-4 py-4 font-semibold rounded-full bg-white ml-2">
                         Learn about hiring
                     </button>
                 </div>

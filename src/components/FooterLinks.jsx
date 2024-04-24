@@ -4,7 +4,7 @@ import dribbbleLogo from "/dribbble.svg"
 export default function FooterLinks() {
     return (
         <footer className="text-center">
-            <div className="flex flex-col items-center sm:flex-rowjustify-between px-6 sm:px-10 py-6 text-sm">
+            <div className="flex flex-col items-center sm:flex-row justify-between px-6 sm:px-10 py-6 text-sm">
                 <img
                     className="w-24 "
                     src={dribbbleLogo}
@@ -68,10 +68,10 @@ export default function FooterLinks() {
                 </div>
             </div>
             
-            <div className="flex justify-between flex-col items-center px-6 sm:px-10 py-6 bg-orange-50 text-sm">
+            <div className="flex justify-between flex-col sm:flex-row items-center px-6 sm:px-10 py-6 text-sm">
                 <div className="flex items-center">
                     <p className="text-gray-500">&copy; {new Date().getFullYear()} Dribbble</p>
-                    <ul className="flex gap-8 ml-8">
+                    <ul className="flex gap-4 ml-8">
                         <li className="text-gray-500">
                             <a href="#">Terms</a>
                         </li>
