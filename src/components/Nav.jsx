@@ -14,18 +14,18 @@ export default function Nav() {
         <nav className="flex justify-between px-6 sm:px-10 py-6 text-sm relative">
             <div className="flex items-center">
                 <button
-                    className="text-2xl mr-4 sm:hidden"
+                    className="text-2xl mr-4 md:hidden"
                     onClick={handleClick}
                 >
                     {
                         isOpen ?
-                            <i class="bi bi-x"></i> :
-                            <i class="bi bi-list"></i>
+                            <i className="bi bi-x"></i> :
+                            <i className="bi bi-list"></i>
                     }
                 </button>
                 <img className="w-24" src={dribbbleLogo} alt="Dribbble Logo." />
                 <ul
-                    className={`${navClass} flex transition-all duration-1000 flex-col sm:flex-row gap-8 ml-8 p-6 bg-white sm:bg-transparent absolute sm:static  top-24`}
+                    className={`${navClass} flex transition-all duration-1000 flex-col md:flex-row gap-8 ml-8 p-6 bg-white md:bg-transparent absolute md:static  top-24`}
                 >
                     <li className="font-semibold">
                         <a href="#">

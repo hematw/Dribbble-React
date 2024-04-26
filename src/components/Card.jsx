@@ -1,6 +1,6 @@
 export default function Card(props) {
     return (
-        <div className="w-[300px] grow m-auto card">
+        <div className="w-[270px] grow m-auto card">
             <div className="flex relative items-end rounded-xl overflow-hidden">
                 <img
                     className="w-full"
@@ -37,12 +37,12 @@ export default function Card(props) {
                 <p className="ml-2">{props.item.user}</p>
                 <div className=" text-gray-400 ml-auto text-[12px]">
                     <span className="ml-4">
-                        <i className="bi bi-heart-fill"></i>
+                        <i className="bi bi-heart-fill mr-2"></i>
                         {props.item.likes}
                     </span>
 
                     <span className="ml-4">
-                        <i className="bi bi-eye-fill"></i>
+                        <i className="bi bi-eye-fill mr-2"></i>
                         {props.item.views}k
                     </span>
                 </div>

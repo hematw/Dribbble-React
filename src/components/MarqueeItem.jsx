@@ -1,52 +1,50 @@
-export default function MarqueeItem(props) {
+
+export default function MarqueeItem({ item }) {
+
     return (
         <>
             {
-                props.bigItem &&
-                <div
-                    className="slide-big marquee-item shadow-lg shadow-gray-300"
-                    style={{
-                        backgroundImage: `url(${props.bigItem.imageUrl})`,
-                    }}
-                >
+                item.isBig ?
                     <div
-                        className="marquee-item-overlay flex items-end"
+                        className="slide-big overflow-hidden marquee-item shadow-lg shadow-gray-300"
+                        style={{
+                            backgroundImage: `url(${item.imageUrl})`,
+                        }}
                     >
-                        <div>
-                            <p>{props.bigItem.name}</p>
-                            <p>{props.bigItem.title}</p>
-                            <div className="mt-2">
-                                {
-                                    props.bigItem.skills.map(skill => {
-                                        return (
-                                            <span
-                                                className="border border-gray-400 rounded-full px-2 py-1 mr-2"
-                                                key={skill}
-                                            >
-                                                {skill}
-                                            </span>)
-                                    })
-                                }
+                        <div
+                            className="marquee-item-overlay flex items-end"
+                        >
+                            <div>
+                                <p>{item.name}</p>
+                                <p>{item.title}</p>
+                                <div className="mt-2">
+                                    {
+                                        item.skills.map(skill => {
+                                            return (
+                                                <span
+                                                    className="border border-gray-400 rounded-full px-2 py-1 mr-2"
+                                                    key={skill}>
+                                                    {skill}
+                                                </span>)
+                                        })
+                                    }
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            }
-            {
-                props.smallItem &&
-                <div
-                    className="w-48 marquee-item"
-                >
-                    <img
-                        className="block rounded-md w-full shadow-lg shadow-gray-300 "
-                        src={props.smallItem.imageUrl}
-                        alt="" />
-                    <p
-                        className="text-black mt-4"
-                    >
-                        {props.smallItem.title}
-                    </p>
-                </div>
+
+                    :
+
+                    <div
+                        className="slide-small w-48 marquee-item">
+                        <img
+                            className="block rounded-md w-full shadow-lg shadow-gray-300 "
+                            src={item.imageUrl}
+                            alt="" />
+                        <p className="text-black mt-4">
+                            {item.title}
+                        </p>
+                    </div>
             }
         </>
     )

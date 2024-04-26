@@ -1,28 +1,37 @@
 .slider {
-    margin: auto;
-    overflow: hidden;
     position: relative;
+    white-space: nowrap;
+    font-size: 0;
+    padding: 0;
 }
 
 .slide-track {
-    /* animation: scroll 50s linear infinite; */
-    display: flex;
-    width: calc(300px * 14);
+    animation: scroll 30s linear infinite;
+    margin: 0;
+}
+
+.slider:hover .bottom-slide {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
 }
 
 .slide-big {
-    min-width: 270px;
-    min-height: 320px;
+    width: 290px;
+    height: 320px;
     border-radius: 26px;
+    margin: 0 2em;
+}
+
+.slide-small {
+    min-width: 190px;
+    margin: 1em;
 }
 
 .marquee-item {
-    overflow: hidden;
+    display: inline-block;
     white-space: nowrap;
     background-size: cover;
     background-position: center;
-    animation: scroll 30s linear infinite;
-
 }
 
 .marquee-item-overlay {
@@ -46,10 +55,10 @@
 
 @keyframes scroll {
     0% {
-        transform: translateX(20%);
+        transform: translateX(0%);
     }
 
     100% {
-        transform: translateX(calc(-200px * 11));
+        transform: translateX(-100%);
     }
 }

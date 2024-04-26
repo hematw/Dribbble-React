@@ -1,23 +1,25 @@
 import MarqueeItem from "./MarqueeItem.jsx"
 
-export default function Marquee(props) {
+export default function Marquee({ data, isBottom }) {
+
+    const nameOfClass = isBottom ? "bottom-slide" : ""
 
     return (
         <div
-            className="slider  overflow-hidden">
+            className="slider overflow-hidden my-10">
             <div
-                className="slide-track flex items-center font-medium gap-8 overflow-hidden py-10 text-sm text-white">
+                className={`${nameOfClass} slide-track inline-block font-medium py-0 text-sm text-white`}>
                 {
-                    props.marqueeData &&
-                    props.marqueeData.map(item => (
-                        <MarqueeItem bigItem={item} key={item.title} />
+                    data.map(item => (
+                        <MarqueeItem item={item} key={item.id} />
                     ))
                 }
-
+            </div>
+            <div
+                className={`${nameOfClass} slide-track inline-block font-medium py-0 text-sm text-white`}>
                 {
-                    props.footerMarqueeData &&
-                    props.footerMarqueeData.map(item => (
-                        <MarqueeItem smallItem={item} key={item.title} />
+                    data.map(item => (
+                        <MarqueeItem item={item} key={item.id} />
                     ))
                 }
             </div>
